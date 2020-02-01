@@ -523,14 +523,19 @@ div.all_wrap{
 	text-align:center;
 }
  .footer-wrapp{
-	
+	height:69px;
+	width:924px;
+	margin:0 auto;
 	margin-top:30px;
 	background:url(../Image/footer.png);
 }
+#foor{
+    height:80px;
+}
 .foot_main{
     height:20px;
-	width:450px;
-	margin:auto;
+    width:450px;
+    margin:auto;
 }
 .fmain_word{
    color:#FFFFFF;
