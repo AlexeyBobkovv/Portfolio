@@ -523,11 +523,9 @@ div.all_wrap{
 	text-align:center;
 }
  .footer-wrapp{
-	height:69px;
-	width:924px;
-	margin:0 auto;
+	
 	margin-top:30px;
-	background:url(../Image/footer.png) no-repeat;
+	background:url(../Image/footer.png);
 }
 .foot_main{
     height:20px;
