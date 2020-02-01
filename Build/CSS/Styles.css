@@ -527,7 +527,7 @@ div.all_wrap{
 	width:924px;
 	margin:0 auto;
 	margin-top:30px;
-	background:url(../Image/footer.png);
+	background:url(../Image/footer.png) no-repeat;
 }
 .foot_main{
     height:20px;
