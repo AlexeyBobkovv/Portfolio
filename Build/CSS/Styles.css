@@ -242,12 +242,7 @@ div.all_wrap{
     width: 222px;
     cursor: pointer;
     border: 1px solid #FFF;
-}
- 
-.minimized:hover {
-    border: 1px solid yellow;
-}
- 
+} 
 /* увеличенная картинка */
 #magnify {
     display: none;
