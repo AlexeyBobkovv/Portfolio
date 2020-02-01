@@ -1,0 +1,147 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="icon" type="image/png" sizes="16x16" href="Build/favicon-16x16.png">
+<title>News</title>
+<style type="text/css">
+      @import url("Build/CSS/Styles.css");
+      </style>
+ <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script>
+  $(function(){
+  $.fn.scrollToTop=function(){
+    $(this).hide().removeAttr("href");
+    if($(window).scrollTop()!="0"){
+        $(this).fadeIn("slow")
+  }
+  var scrollDiv=$(this);
+  $(window).scroll(function(){
+    if($(window).scrollTop()=="0"){
+    $(scrollDiv).fadeOut("slow")
+    }else{
+    $(scrollDiv).fadeIn("slow")
+  }
+  });
+    $(this).click(function(){
+      $("html, body").animate({scrollTop:0},"slow")
+    })
+  }
+});
+$(function() {$("#toTop").scrollToTop();});
+</script>   
+<script>
+$(function(){
+  $('.minimized').click(function(event) {
+    var i_path = $(this).attr('src');
+    $('body').append('<div id="overlay"></div><div id="magnify"><img src="'+i_path+'"><div id="close-popup"><i></i></div></div>');
+    $('#magnify').css({
+	    left: ($(document).width() - $('#magnify').outerWidth())/2,
+	    // top: ($(document).height() - $('#magnify').outerHeight())/2 upd: 24.10.2016
+            top: ($(window).height() - $('#magnify').outerHeight())/2
+	  });
+    $('#overlay, #magnify').fadeIn('fast');
+  });
+  
+  $('body').on('click', '#close-popup, #overlay', function(event) {
+    event.preventDefault();
+ 
+    $('#overlay, #magnify').fadeOut('fast', function() {
+      $('#close-popup, #magnify, #overlay').remove();
+    });
+  });
+});
+</script>
+</head>
+ <body>	
+        <a href="#" id="toTop"></a>
+	<div id="wrapper">	 
+         <header id="header">
+            <div class="wrapp">
+			    <div class="site-info">
+			        <div class="logo"></div>
+			        <div class="site-name"><a href="index.html"><img src="Build/Image/name.png" alt="kosmos_life"></a></div>
+                    <div class="user-manage">
+                      <form method="post" action="/users/login">
+                          <table class="user-table">
+                            <tbody>
+                                <tr>
+                                 <td><input class="input-field login-field" name="user_name" id="login-field" type="text" placeholder="Login"></td>
+                                 <td><input class="input-field pwd-field" name="user_pass" id="pwd" type="password" placeholder="Password"></td>
+                                 <td><button class="button-type" type="submit">Sing in</button></td>  
+                               </tr>
+                               <tr>
+                                <td><a class="user-link" href="/users/register">Registration</a></td>
+                                <td><a class="user-link" href="/users/forgot">Forgot Password?</a></td> 
+                              </tr>
+                          </tbody>          
+                        </table>
+                       </form>
+                    </div>
+                  <div class="social-links">
+                    <a class="soc-link vk" target="_blank" title="Kosmos on VK" href="#"></a>
+                    <a class="soc-link fb" target="_blank" title="Kosmos on Facebook" href="#"></a>
+                    <a class="soc-link telegram" target="_blank" title="News channel Kosmos в Telegram" href="#"></a>
+                    <a class="soc-link instagram" target="_blank" title="Kosmos on Instagram" href="#"></a>
+                  </div>
+			    </div> 
+           </div>       
+       </header>
+       
+       
+    <main class="main">
+      <aside class="main_left">
+       <div class="photo"></div>
+       <div class="rectangle">Info</div>
+       <div class="info_text">
+         <h2><img src="Build/Image/hum.png" width="21" height="18" alt> Name</h2>
+       <p>Alexey Bobkov</p>
+         <h2><img src="Build/Image/adr.png" width="21" height="18" alt> Adress</h2>
+       <p>Belarus,Minsk</p>
+          <h2><img src="Build/Image/pho.png" width="21" height="18" alt>Telephone</h2>
+       <p>+375296571427</p>
+          <h2><img src="Build/Image/ema.png" width="21" height="18" alt>Email</h2>
+       <p>alekseixxxbobkov@bk.ru</p>
+       </div>
+       <div class="rectangle">Skills</div>
+       <div class="skills_text">
+        <h2 class="skills_text"><img src="Build/Image/html.png" width="88" height="60" align="middle" alt>HTML5</h2>
+        <h2 class="skills_text"><img src="Build/Image/CSS.png" width="88" height="60" align="middle" alt>CSS</h2>
+        <h2 class="skills_text"><img src="Build/Image/JS.png" width="88" height="60" align="middle" alt>JavaSkript</h2>
+        <h2 class="skills_text"><img src="Build/Image/adobe.png" width="88" height="60" align="middle" alt>Photoshop</h2>
+       </div>
+      </aside>
+      <section class="main_content">
+      <div class="my_name">
+        <p class="name">Alexey</p>
+        <p class="surname">Bobkov</p>
+      </div>
+      <div class="description , my_name">
+        <p>About me</p>
+         <p>I have experience with HTML and CSS, I continue to improve knowledge in this direction.
+Improving JavaScript knowledge in the near future Boostrap, jQuery.</p>
+          <p>Hobbies - sports, drawing, reading books, gaming, I plan to try myself in game development</p>
+          <p>Below you will see other pages from my site that I decided not to post in github, because they only have different content, not styles.</p>
+      </div>
+      
+      <ul class="list_of_photos" >
+         <li class="oneofphoto"> <div class="enter-photo" data-title="Группа галактик Хиксон 90"><img src="Build/Image/1ph.png" width="225" height="200" alt="клик для увеличения" class="minimized"></div></li>
+         <li class="oneofphoto"> <div class="enter-photo" data-title="Группа галактик Хиксон 90"><img src="Build/Image/2ph.png" width="225" height="200" alt="клик для увеличения" class="minimized"></div></li>
+         <li class="oneofphoto"> <div class="enter-photo" data-title="Группа галактик Хиксон 90"><img src="Build/Image/3ph.png" width="225" height="200" alt="клик для увеличения" class="minimized"></div></li>
+         <li class="oneofphoto"> <div class="enter-photo" data-title="Группа галактик Хиксон 90"><img src="Build/Image/4ph.png" width="225" height="200" alt="клик для увеличения" class="minimized"></div></li>
+         <li class="oneofphoto"> <div class="enter-photo" data-title="Группа галактик Хиксон 90"><img src="Build/Image/5ph.png" width="225" height="200" alt="клик для увеличения" class="minimized"></div></li>
+         <li class="oneofphoto"> <div class="enter-photo" data-title="Группа галактик Хиксон 90"><img src="Build/Image/6ph.png" width="225" height="200" alt="клик для увеличения" class="minimized"></div></li>
+      </ul>
+      </section>
+    </main>
+   
+    <footer id="foor"><!--Футер-->			
+		 <div class="footer-wrapp"> 
+            <div class="foo_left"><p></p></div>   
+			<div class="foot_main"><h3 class="fmain_word" align="center">Own site for any-all © 2019-2020</h3></div>		
+         </div>
+   </footer>
+   
+  </div>
+ </body>
+</html>
