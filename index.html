@@ -6,29 +6,28 @@
 <title>Portfolio</title>
 <style type="text/css">
       @import url("Build/CSS/Styles.css");
-      </style>
- <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
-<script>
-$(function(){
-  $('.minimized').click(function(event) {
-    var i_path = $(this).attr('src');
-    $('body').append('<div id="overlay"></div><div id="magnify"><img src="'+i_path+'"><div id="close-popup"><i></i></div></div>');
-    $('#magnify').css({
-	    left: ($(document).width() - $('#magnify').outerWidth())/2,
-	    // top: ($(document).height() - $('#magnify').outerHeight())/2 upd: 24.10.2016
-            top: ($(window).height() - $('#magnify').outerHeight())/2
-	  });
-    $('#overlay, #magnify').fadeIn('fast');
-  });
-  
-  $('body').on('click', '#close-popup, #overlay', function(event) {
-    event.preventDefault();
- 
-    $('#overlay, #magnify').fadeOut('fast', function() {
-      $('#close-popup, #magnify, #overlay').remove();
-    });
-  });
-});
+  img.zoom {
+  -moz-user-select: none; user-select: none;
+}
+img.zoom:hover {
+  display: block;
+  position: fixed;
+  z-index: 10;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%);
+  width: auto;
+  height: auto;
+  max-width: 99%;
+  max-height: 99%;
+  border: solid rgba(210,210,210,.4);
+  border-width: 100vh 100vw;
+  cursor: zoom-out;
+}
+:not(:active) > img.zoom:not(:hover), img.zoom:active {
+  pointer-events: none;
+}
+</style>
 </script>
 </head>
  <body>	
@@ -103,12 +102,12 @@ Improving JavaScript knowledge in the near future Boostrap, jQuery.</p>
       </div>
       
       <ul class="list_of_photos" >
-         <li class="oneofphoto"> <div class="enter-photo" data-title="Black Hole Article"><img src="Build/Image/1ph.png" width="225" height="200" alt="клик для увеличения" class="minimized"></div></li>
-         <li class="oneofphoto"> <div class="enter-photo" data-title="Photo page"><img src="Build/Image/2ph.png" width="225" height="200" alt="клик для увеличения" class="minimized"></div></li>
-         <li class="oneofphoto"> <div class="enter-photo" data-title="Article about Mars"><img src="Build/Image/3ph.png" width="225" height="200" alt="клик для увеличения" class="minimized"></div></li>
-         <li class="oneofphoto"> <div class="enter-photo" data-title="NASA Live Stream"><img src="Build/Image/4ph.png" width="225" height="200" alt="клик для увеличения" class="minimized"></div></li>
-         <li class="oneofphoto"> <div class="enter-photo" data-title="Article about Jupiter0"><img src="Build/Image/5ph.png" width="225" height="200" alt="клик для увеличения" class="minimized"></div></li>
-         <li class="oneofphoto"> <div class="enter-photo" data-title="Some information about the planets of the solar system and the sun itself0"><img src="Build/Image/6ph.png" width="225" height="200" alt="клик для увеличения" class="minimized"></div></li>
+         <li class="oneofphoto"> <div class="enter-photo" data-title="Black Hole Article"><img src="Build/Image/1ph.png" width="225" height="200" alt="клик для увеличения" class="zoom"></div></li>
+         <li class="oneofphoto"> <div class="enter-photo" data-title="Photo page"><img src="Build/Image/2ph.png" width="225" height="200" alt="клик для увеличения" class="zoom"></div></li>
+         <li class="oneofphoto"> <div class="enter-photo" data-title="Article about Mars"><img src="Build/Image/3ph.png" width="225" height="200" alt="клик для увеличения" class="zoom"></div></li>
+         <li class="oneofphoto"> <div class="enter-photo" data-title="NASA Live Stream"><img src="Build/Image/4ph.png" width="225" height="200" alt="клик для увеличения" class="zoom"></div></li>
+         <li class="oneofphoto"> <div class="enter-photo" data-title="Article about Jupiter0"><img src="Build/Image/5ph.png" width="225" height="200" alt="клик для увеличения" class="zoom"></div></li>
+         <li class="oneofphoto"> <div class="enter-photo" data-title="Some information about the planets of the solar system and the sun itself0"><img src="Build/Image/6ph.png" width="225" height="200" alt="клик для увеличения" class="zoom"></div></li>
       </ul>
       </section>
     </main>
