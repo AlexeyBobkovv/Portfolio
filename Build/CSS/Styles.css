@@ -1,15 +1,15 @@
 @charset "utf-8";
 /* CSS Document */
 *{
-	margin:0px;
-	padding:0px;
-	border:0px;
-	outline:0;
+   margin:0px;
+   padding:0px;
+   border:0px;
+   outline:0;
 }
 body{
-	background:url(../Image/BG.jpg) no-repeat;
-	background-repeat: no-repeat;
-    background-size: cover;
+  background:url(../Image/BG.jpg) no-repeat;
+  background-repeat: no-repeat;
+  background-size: cover;
     }
 #toTop {
     position:fixed;
@@ -20,9 +20,9 @@ body{
     width: 100px;
     height: 100px;
     border: none;
-    padding: 5px;
-    cursor: pointer;
-    text-decoration: none;
+        padding: 5px;
+        cursor: pointer;
+        text-decoration: none;
 }
 #header{
 	height:100px;
@@ -55,36 +55,35 @@ div.all_wrap{
 	margin: 35px 0 0 220px;
 	width: 234px;
 	height: 37px;
-	float:left;
-	
+     float:left;
  }
  .logo {
-	position: relative;
-	z-index: 1;
-	width:336px;
-	height:100px;
-	background:url(../Image/logotype.png);
-	float:left;
+     position: relative;
+     z-index: 1;
+     width:336px;
+     height:100px;
+     background:url(../Image/logotype.png);
+     float:left;
 }
  .user-link {
-   color: #FFF;
-   font-size: .700em;
-   margin-top: 5px;
-   display: inline-block;
-   text-align: left;
-   float:left;
-   text-decoration:none;
+     color: #FFF;
+     font-size: .700em;
+     margin-top: 5px;
+     display: inline-block;
+     text-align: left;
+     float:left;
+     text-decoration:none;
    
    } 
  .user-manage {
-    width: 240px;
-    float: left;
-    text-align: right;
-	padding: 10px 0 0 250px;
+     width: 240px;
+     float: left;
+     text-align: right;
+     padding: 10px 0 0 250px;
 	
   }
  .user-table{
-    float:right;
+     float:right;
 }
 .input-field{
      font-size: 14px;
@@ -92,26 +91,26 @@ div.all_wrap{
      padding: 0 5px;
 	}
 .login-field{
-   	 width: 130px;
+     width: 130px;
      color: #d7d7d7;
      height: 18px;
 	}
 .pwd-field{
-  	 width: 130px;
+     width: 130px;
      color: #d7d7d7;
      height: 18px;
 }
 .button-type {
-	 width: 70px;
+     width: 70px;
      height: 20px;
      font: normal 15px PFDinDisplayProMediumRegular, Tahoma, Geneva, sans-serif;
      color: #FFF;
      margin: 0;
      padding: 0 10px;
-	 border: 0;
+     border: 0;
      cursor: pointer;
      text-align: center;
-	  background: #b0b0b0;
+     background: #b0b0b0;
 }
 .section-header .social-links a:active{
      color: #e1e1e1;
@@ -119,7 +118,7 @@ div.all_wrap{
 .social-links {
      float:right;
      width: 160px;
-	 padding: 7px 120px 0 0;
+     padding: 7px 120px 0 0;
 }
 .social-links .soc-link {
      height: 25px;
@@ -142,86 +141,83 @@ div.all_wrap{
     background-position: -208px 0;
 }
 .main{
-	height:1350px;
-	max-width: 850px;
-	margin-top: 10px;
+    height:1350px;
+    max-width: 850px;
+    margin-top: 10px;
     margin-left: auto;
     margin-right: auto;
-	background:#222223;
-	opacity: 0.97;
+    background:#222223;
+    opacity: 0.97;
 }
-.main_left{
-	width:240px;
-	height:1350px;
-	float:left;
-	border-right:solid #4ba1b7;
+.main_left{	
+    width:240px;
+    height:1350px;
+    float:left;
+    border-right:solid #4ba1b7;
     border-width:3px;
  }
- .photo{
-	
-}
- .rectangle{
-	background-image:url(../Image/rectangle.png);
+.rectangle{
+    background-image:url(../Image/rectangle.png);
     height: 61px;
-	width: 207px;
-	font-size: 62px;
-	color:#FFFFFF;
-	text-align: center;
-	margin: 20px;
+    width: 207px;
+    font-size: 62px;
+    color:#FFFFFF;
+    text-align: center;
+    margin: 20px;
  }
  .info_text{
-	text-align: center;
-	color:#FFFFFF;
+    text-align: center;
+    color:#FFFFFF;
 }
   .info_text h2{
-	padding: 10px 10px;
+    padding: 10px 10px;
 }
 .skills_text{
-	padding-bottom: 10px;
-	color:#FFFFFF;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    color:#FFFFFF;
 }
 .main_content{
     height: 1100px;
     width: 600px;
-	float:right;
+    float:right;
  }
 .my_name{
     font-size: 75px;
-	color:#FFFFFF;
-	font-family: Elephant;
+    color:#FFFFFF;
+    font-family: Elephant;
 }
 .name{
     padding-left:40px;
 }
 .surname{
     text-align: right;
-	padding-right:40px;
+    padding-right:40px;
 }
 .description{
-	font-size: 20px;
+    font-size: 20px;
     text-align:center;
-	padding: 40px;
+    padding: 40px;
 }
 .description p{
-	padding: 10px;
+    padding: 10px;
 }
 
 .list_of_photos{
-	display: flex;
+    display: flex;
     flex-wrap: wrap;
-   
     list-style: none;
 }
 .oneofphoto{
-	width: 40% !important;
+    width: 40% !important;
     padding: 0 0px 15px 40px;
 	
 }
 .enter-photo{
-	height:203px;
-	position: relative;
+    height:203px;
+    position: relative;
     overflow: hidden;
-	display: inline-block;
+    display: inline-block;
 }
 .enter-photo:hover::after {
     content: attr(data-title); 
@@ -238,40 +234,37 @@ div.all_wrap{
 }
 /* картинка на странице */
 .minimized {
-  cursor: pointer;
+    cursor: pointer;
   
 }
 /* увеличенная картинка */
 .minimized {
-  width: 222px;
-  cursor: pointer;
-  border: 1px solid #FFF;
+    width: 222px;
+    cursor: pointer;
+    border: 1px solid #FFF;
 }
  
 .minimized:hover {
-  border: 1px solid yellow;
+    border: 1px solid yellow;
 }
  
 /* увеличенная картинка */
 #magnify {
-  display: none;
+    display: none;
  
- 
-  /* position: absolute; upd: 24.10.2016 */
-  position: fixed;
-  width: 800px;
-  height:700px;
-  z-index: 9999;
-}
- 
+ /* position: absolute;  */
+    margin-top:150px;
+    position: fixed;
+    width: 1300px;
+    height:1300px;
+    z-index: 9999;
+	
 #magnify img {
-  width: 100%;
+    width: 100%;
 }
- 
 /* затемняющий фон */
 #overlay {
   display: none;
- 
   background: #000;
   position: fixed;
   top: 0;
@@ -313,31 +306,31 @@ div.all_wrap{
   animation-iteration-count: 1;
 }
 #dle-content{
-    height: 885px;
+  height: 885px;
 }
 .entry{
-    height: 300px;
-	border: 1px solid #e5e5e5;
-    margin-bottom: 40px;
-    position: relative;
+  height: 300px;	
+  border: 1px solid #e5e5e5;
+  margin-bottom: 40px;
+  position: relative;
 }
 .entry__title{
-	font-size: 1.1875em;
-    margin: 11px 15px 0;
-	text-align: center
+  font-size: 1.1875em;
+  margin: 11px 15px 0;
+  text-align: center
 }
 
 .entry__title a {
-    display: inline-block;
-    color:#FFFFFF;
-	font-family: 'PT Sans', Arial, Helvetica, sans-serif;
-    line-height: 1;
-    text-decoration:none;
-    cursor: pointer;
+  display: inline-block;
+  color:#FFFFFF;
+  font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+  line-height: 1;
+  text-decoration:none;
+  cursor: pointer;
 }
 .entry__title a:after {
-	background:#94AEE3;
-    display: block;
+  background:#94AEE3;
+  display: block;
     content: "";
     height: 2px;
     width: 0%;
